@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <i class="material-icons">expand_more</i>
+        <span>Now Playing</span>
+        <i class="material-icons">more_horiz</i>
+      </div>
+      <div class="MyImage">
+        <img src="./img/cover.jpg" alt="" />
+      </div>
+      <div class="song-info">
+        <div class="song-name">song</div>
+        <div class="singer-name">singer</div>
+      </div>
+      <div class="audio-section">
+        <div class="MyAudio">
+          <input type="range" min="0" max="100" value="0" step="1" id="slider"/>
+          <audio src="" id="MyAudio"></audio>
+        </div>
+        <div class="times">
+          <span class="current-time">0:00</span>
+          <span class="main-time">0:00</span>
+        </div>
+      </div>
+      <div class="footer">
+        <i class="material-icons repeat" title="Playlist looped">repeat</i>
+        <i class="material-icons skip-pre">skip_previous</i>
+        <div class="play-icon">
+          <i class="material-icons play">play_arrow</i>
+        </div>
+        <i class="material-icons skip-next">skip_next</i>
+        <i class="material-icons list open">queue_music</i>
+      </div>
+      <div class="AllMusics">
+        <div class="top">
+          <i class="material-icons">queue_music</i>
+          <span class="text">Music list</span>
+          <i class="close material-icons">close</i>
+        </div>
+        <ul class="mylist"></ul>
+      </div>
+    </div>
+    <script src="./main-script.js"></script>
+  </body>
+</html>
